@@ -2,8 +2,6 @@
 # BOOTH'S MULTIPLIER USING VERILOG
   Booth's multiplication algorithm is a multiplication algorithm that multiplies two signed binary numbers in two's complement notation. The algorithm was invented by Andrew Donald Booth in 1950. In this project, we have designed and implemented the Booths Algorithm for Multiplication using the data path and the control path. The module desigmed is capable of performing multiplication of two 4-bit signed numbers which generates a 10-bit result.
 # INDEX
-- [Booth's Multiplier using Verilog (https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#booths-multiplier-using-verilog)
-- [Index]()
 - [Introduction]()
 - [Booth's Algorithm]()
     - [Basic Idea]()
@@ -90,17 +88,30 @@
                 
   Hence, the final result is {A,Q} = (0000111000)<sub>2</sub> = (56)<sub>10</sub>
 
-
-![Booths_Block_Diagram](https://user-images.githubusercontent.com/90913438/189526563-2c735189-becb-4497-92b6-2ee9173ceb7d.png)
+# Flow Chart 
 ![Booths_Flow_Chart](https://user-images.githubusercontent.com/89533085/189528949-fa907629-96c5-4b9a-a32f-4b5c267f45b0.png)
 # Data Path 
 
 ![Booths_Multiplier_Data_Path](https://user-images.githubusercontent.com/89533085/189529052-14875833-db44-4102-83c7-d45347c6b8c2.png)
    The above fig shown depicts the data path of the booth's multiplier. 
-- It contain 3 Shift registers to store Multiplicand (M), Multiplier (Q) and the partial product (A). There is a common data_in line to load the values to M and Q. The values are loaded using control signals ldM and ldQ respectively. Along with ldQ, shift register Q is provided with few more control signals such as clrQ and shiftQ which are used to clear the register and shift the contents of register respectivly. The shift register A is initialized with 0. The shift register A is also provided with same control signals as that if register Q that are ldA to load value to A, clrA to clear the register and shiftA to shift the content. 
+- It contains 3 Shift registers to store Multiplicand (M), Multiplier (Q) and the partial product (A). There is a common data_in line to load the values to M and Q. The values are loaded using control signals ldM and ldQ respectively. Along with ldQ, shift register Q is provided with few more control signals such as clrQ and shiftQ which are used to clear the register and shift the contents of register respectivly. The shift register A is initialized with 0. The shift register A is also provided with same control signals as that if register Q that are ldA to load value to A, clrA to clear the register and shiftA to shift the content. 
 - There is one D type flip flop present which stores the value of LSB of Q register. The input to the flipflop is Q[0] and the output is qm1. But while computing the output of flipflop is assumed as Q[-1]. There is a control signla present to clear the flip flop.
 - As we saw previosly, the booth's algorithm checks the bits Q[0]Q[-1] and decides whether to add partial product to multiplicand and then shift (case : 01) or to sub multiplicand from partial product and then shift (case : 10) or only shift the contents (case : 00/11). In first two cases i.e. when Q[0]Q[-1] are either 01 or 10, addition or subtraction operation needs to be performed. Thus an ALU i.e. an Arithmetic Logic Unit is present which carries out the addition and subtraction operation depending upon the select input applied. The select input is the control signal to the ALU which comes from the control path and is based on the value of Q[0]Q[-1]. The result of ALU is loaded back to A. The number of shifting operations is same as that of the number of bits which are loaded in the shift registers (both registers should be loaded with equal number of bits.) Here we have loaded 4-bit signed numbers thus the shifting operation needs to be performed 5 times. There is a down counter present to serve this purpose. It has control signal 'ldcount' which loads value 101 to counter and another control signal named 'decr' to decrement it to zero.
 - While reading the output of booth's multiplier we read from the MSB of register of partial procut i.e. A to LSB of Multiplier i.e. Q[0] and leave Q[-1]. 
-       
-
+   
+# Control Path and State Diagram 
+-----
+-----
 ![Booths_State_Diagram](https://user-images.githubusercontent.com/90913438/189526567-032fe8de-6611-4b8c-802c-920c27ee7aad.png)
+
+![Booths_Block_Diagram](https://user-images.githubusercontent.com/90913438/189526563-2c735189-becb-4497-92b6-2ee9173ceb7d.png)
+# Simulation Results 
+## Command Line Output 
+## GTKWave Output 
+## Xilinx ISE iSim Output 
+
+# Implentation 
+
+# Conclusion 
+# References 
+
