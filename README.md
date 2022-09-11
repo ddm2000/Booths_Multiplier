@@ -26,6 +26,14 @@
    * If the bits are 01, we do an addi@on and then shift.
    * If the bits are 10, we do a subtrac@on and then shift.
 2. Initially, Qi-1 is assumed to be zero.
+## Example:
+  Let us consider an example where we multiply two binary numbers using Booth's algorithm. We will multiply 7 and 8, and we will get 56 as the answer. Let M be the multiplier register, and Q be the multiplicand register. Also, let A be the temporary register used to calculate the product. Thus, in binary, we can write,
+  
+  M = 00111, Q = 01000
+  
+  As initial value of A is 0,
+  
+  A = 00000
 
 ![Booths_Block_Diagram](https://user-images.githubusercontent.com/90913438/189526563-2c735189-becb-4497-92b6-2ee9173ceb7d.png)
 ![Booths_Flow_Chart](https://user-images.githubusercontent.com/89533085/189528949-fa907629-96c5-4b9a-a32f-4b5c267f45b0.png)
