@@ -29,7 +29,7 @@
 ## Example:
   Let us consider an example where we multiply two binary numbers using Booth's algorithm. We will multiply 7 and 8, and we will get 56 as the answer. Let M be the multiplier register, and Q be the multiplicand register. Also, let A be the temporary register used to calculate the product. Thus, in binary, we can write,
   
-  M = 00111, Q = 01000
+  >M = 00111 , Q = 01000
   
   As initial value of A is 0,
   
