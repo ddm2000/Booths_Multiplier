@@ -34,6 +34,24 @@
   As initial value of A is 0,
   
   A = 00000
+  
+  And finally, initial value of Q(-1) will be 0
+  
+  Q(-1) = 0
+  
+  Now, the Booth's algorithm will multiply the two numbers as follows:
+  
+                  | A: 00000 |  Q: 01000 | Q(-1): 0
+                  | A: 00000 |  Q: 00100 | Q(-1): 0
+                  | A: 00000 |  Q: 00010 | Q(-1): 0
+                  | A: 00000 |  Q: 00001 | Q(-1): 0
+                  | A: 00000 |  Q: 00001 | Q(-1): 0
+                  | A: 11001 |  Q: 00001 | Q(-1): 1
+                  | A: 11100 |  Q: 10000 | Q(-1): 1
+                  | A: 11100 |  Q: 10000 | Q(-1): 1
+                  | A: 00011 |  Q: 10000 | Q(-1): 0
+                  | A: 00001 |  Q: 11000 | Q(-1): 0
+                  | A: 00001 |  Q: 11000 | Q(-1): 0
 
 ![Booths_Block_Diagram](https://user-images.githubusercontent.com/90913438/189526563-2c735189-becb-4497-92b6-2ee9173ceb7d.png)
 ![Booths_Flow_Chart](https://user-images.githubusercontent.com/89533085/189528949-fa907629-96c5-4b9a-a32f-4b5c267f45b0.png)
