@@ -18,11 +18,9 @@
 - [Implementation]()
 - [Conclusion]()
 - [References]()
-# Booth's Algorithm
-  Booth's multiplication algorithm is a multiplication algorithm that multiplies two signed binary numbers in two's complement notation. In the conventional shift and add operation, for n-bit multiplication, we either add 0 or the multiplicand to the 2n-bit partial product, shift the partial product to the right, and repeat this entire process n times. However, while applying Booth's algorithm, we can avoid the additions whenever consecutive 0's or 1's are detected in the multiplier. Hence, this is a huge improvement from the conventional multiplication algorithm, and it makes the process a lot faster.
-  
-Basic Idea:
-
+## Booth's Algorithm
+  Booth's multiplication algorithm is a multiplication algorithm that multiplies two signed binary numbers in two's complement notation. In the conventional shift and add operation, for n-bit multiplication, we either add 0 or the multiplicand to the 2n-bit partial product, shift the partial product to the right, and repeat this entire process n times. However, while applying Booth's algorithm, we can avoid the additions whenever consecutive 0's or 1's are detected in the multiplier. Hence, this is a huge improvement from the conventional multiplication algorithm, and it makes the process a lot faster. 
+### Basic Idea:
 1. In Booth's algorithm, we inspect two bits of the multiplier (Q)
    * If the bits are same (00 or 11), we only shift the partial product.
    * If the bits are 01, we do an addi@on and then shift.
