@@ -1,4 +1,4 @@
-![Booths_Block_Dia](https://user-images.githubusercontent.com/90913438/189535942-bebcb3c7-f923-449a-9264-07a5ee5537a0.png)
+
 # BOOTH'S MULTIPLIER USING VERILOG
   Booth's multiplication algorithm is a multiplication algorithm that multiplies two signed binary numbers in two's complement notation. The algorithm was invented by Andrew Donald Booth in 1950 .In this project, we have designed and implemented the Booths Algorithm for Multiplication using the data path and the control path. The module desigmed is capable of performing multiplication of two 4-bit signed numbers which generates a 10-bit result.
 # INDEX
