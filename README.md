@@ -27,7 +27,7 @@
    * If the bits are 01, we do an addition and then shift.
    * If the bits are 10, we do a subtraction and then shift.
 2. Initially, Q<sub>i-1</sub> is assumed to be zero.
-## Example:
+### Example:
   Let us consider an example where we multiply two binary numbers using Booth's algorithm. We will multiply 7 and 8, and we will get 56 as the answer. Let M be the multiplier register, and Q be the multiplicand register. Also, let A be the temporary register used to calculate the product. Thus, in binary, we can write,
   
   >M = 00111, Q = 01000
@@ -42,53 +42,53 @@
   
   Now, the Booth's algorithm will multiply the two numbers as follows:
   
-               **Initially:**
+  #### Initially:
                
-                  **A = 00000, Q = 01000, Q(-1) = 0**
+  >A = 00000, Q = 01000, Q(-1) = 0
                   
-               As number of bits is 5, the multiplication will be carried out in 5 steps.
+  As number of bits is 5, the multiplication will be carried out in 5 steps.
                   
-               **Step 1:**
+  #### Step 1:
+             
+  As Q(0) = 0, Q(-1) = 0, the bits will be shifted as follows:
                
-               As Q(0) = 0, Q(-1) = 0, the bits will be shifted as follows:
+  A(MSB) -> A(MSB-1:0) -> Q -> Q(-1)
                
-               A(MSB) -> A(MSB-1:0) -> Q -> Q(-1)
+  >A = 00000, Q: 00100, Q(-1) = 0
                
-                  **A = 00000, Q: 00100, Q(-1) = 0**
+  #### Step 2:
+  
+  As Q(0) = 0, Q(-1) = 0, the bits will be shifted again:
+              
+  >A = 00000, Q = 00010, Q(-1) = 0
                
-               **Step 2:**
+  #### Step 3:
+  
+  As Q(0) = 0, Q(-1) = 0, the bits will be shifted again:
                
-               As Q(0) = 0, Q(-1) = 0, the bits will be shifted again:
-               
-                  **A = 00000, Q = 00010, Q(-1) = 0**
-               
-               **Step 3:**
-               
-               As Q(0) = 0, Q(-1) = 0, the bits will be shifted again:
-               
-                  **A = 00000, Q = 00001, Q(-1) = 0**
+  >A = 00000, Q = 00001, Q(-1) = 0
                   
-               **Step 4:**
+  #### Step 4:
                
-               As Q(0) = 1, Q(-1) = 0, M(00111) will be subtracted from A(00000), and the result will be stored in A:
+  As Q(0) = 1, Q(-1) = 0, M(00111) will be subtracted from A(00000), and the result will be stored in A:
                
-                  A = 11001, Q = 00001, Q(-1) = 1
+  >A = 11001, Q = 00001, Q(-1) = 1
                   
-               After this, the bits will be shifted again:
+  After this, the bits will be shifted again:
                
-                  **A = 11100, Q = 10000, Q(-1) = 1**
-                  
-               **Step 5:**
-               
-                As Q(0) = 0, Q(-1) = 1, M(00111) will be added to A(11100), and the result will be stored in A:
+  >A = 11100, Q = 10000, Q(-1) = 1             
+  
+  #### Step 5:
+  
+  As Q(0) = 0, Q(-1) = 1, M(00111) will be added to A(11100), and the result will be stored in A:
                 
-                  A = 00011, Q = 10000, Q(-1) = 0
+  >A = 00011, Q = 10000, Q(-1) = 0
                   
-                After this, the bits will be shifted again:
+  After this, the bits will be shifted again:
                 
-                  **A = 00001, Q = 11000, Q(-1) = 0**
+  >A = 00001, Q = 11000, Q(-1) = 0
                 
-                Hence, the final result is {A,Q} = (0000111000)<sub>2</sub> = (56)<sub>10</sub>
+  Hence, the final result is {A,Q} = (0000111000)<sub>2</sub> = (56)<sub>10</sub>
 
 ![Booths_Block_Diagram](https://user-images.githubusercontent.com/90913438/189526563-2c735189-becb-4497-92b6-2ee9173ceb7d.png)
 ![Booths_Flow_Chart](https://user-images.githubusercontent.com/89533085/189528949-fa907629-96c5-4b9a-a32f-4b5c267f45b0.png)
