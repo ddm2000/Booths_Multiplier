@@ -24,9 +24,9 @@
 Basic Idea:
 
 1. In Booth's algorithm, we inspect two bits of the multiplier (Q)
-  * If the bits are same (00 or 11), we only shift the partial product.
-  * If the bits are 01, we do an addi@on and then shift.
-  * If the bits are 10, we do a subtrac@on and then shift.
+   * If the bits are same (00 or 11), we only shift the partial product.
+   * If the bits are 01, we do an addi@on and then shift.
+   * If the bits are 10, we do a subtrac@on and then shift.
 2. Initially, Qi-1 is assumed to be zero.
 
 ![Booths_Block_Diagram](https://user-images.githubusercontent.com/90913438/189526563-2c735189-becb-4497-92b6-2ee9173ceb7d.png)
