@@ -1,12 +1,14 @@
 
 # BOOTH'S MULTIPLIER USING VERILOG
+![Cover Image](https://evision-systems.de/wp-content/uploads/2021/06/evision-header-eda-chip09-full.jpg)
+
   Booth's multiplication algorithm is a multiplication algorithm that multiplies two signed binary numbers in two's complement notation. The algorithm was invented by Andrew Donald Booth in 1950. In this project, we have designed and implemented the Booths Algorithm for Multiplication using the data path and the control path. The module desigmed is capable of performing multiplication of two 4-bit signed numbers which generates a 10-bit result.
+  
 # INDEX
-- [Introduction]()
 - [Booth's Algorithm](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#booths-algorithm)
     - [Basic Idea](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#basic-idea)
     - [Example](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#example)
-- [Tools Used]()
+- [Tools Used](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#tools-used)
 - [Flow Chart](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#flow-chart)
 - [Data Path](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#data-path)
 - [Control Path](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#control-path-and-state-diagram)
@@ -97,7 +99,8 @@
 - [Plan Ahead](https://www.xilinx.com/support/documentation-navigation/development-tools/mature-products/planahead.html)
 - [Xilinx Spartan 3E](https://datasheet.lcsc.com/lcsc/2203231830_XILINX-XC3S500E-4PQG208C_C2976019.pdf)
 # Flow Chart 
-![Booths_Flow_Chart](https://user-images.githubusercontent.com/89533085/189528949-fa907629-96c5-4b9a-a32f-4b5c267f45b0.png)
+![Booths_Flow_Chart](https://user-images.githubusercontent.com/90913438/189547631-cf45fba9-1474-4494-b2f5-63d6e4a41d9f.png)
+
 # Data Path 
 
 ![Booths_Multiplier_Data_Path](https://user-images.githubusercontent.com/89533085/189529052-14875833-db44-4102-83c7-d45347c6b8c2.png)
@@ -108,12 +111,23 @@
 - While reading the output of booth's multiplier we read from the MSB of register of partial procut i.e. A to LSB of Multiplier i.e. Q[0] and leave Q[-1]. 
    
 # Control Path and State Diagram 
------
------
-![Booths_State_Diagram](https://user-images.githubusercontent.com/90913438/189526567-032fe8de-6611-4b8c-802c-920c27ee7aad.png)
+
+ ![Booths_State_Diagram](https://user-images.githubusercontent.com/90913438/189547608-cdae9063-aa2d-4955-991c-c661bc2efb0f.png)
+The above fig depicts the control path of the Booths multiplier. 
+&nbsp&nbsp The control path is a controller which provides different control signals to the different data path modules. There are some feedback signals which originate from data path and are fed to control path. These signals are necessary for state trasition. The control path module is a Finite State Machine. There are some finite states and depending in which state currently the module is, the control signals are activated. The above diagram shows the states assigned to the block. 
+- S0 : The module starts 
+- S1 : When module is in state S1, the partial product shift register A gets loaded with all zeros. The count gets loaded to the counter and the Multiplicand M gets loaded through the data_in. 
+- S2 : In state S2, the Multiplier value gets loaded. 
+- S3 : If the Q[0]Q[-1] bits are 01 then module goes into state S3 where the value of multiplicand M and partial product A are loaded into ALU and are added with each other[A = A+M]. The result again is stored into the register A. 
+- S4 : If the Q[0]Q[-1] bits are 10 then module goes into state S4 where the value of multiplicand M and partial product A are loaded into ALU and are subtracted [A = A-M]. The result again is stored into the register A. 
+- S5 : The module changes its state from S2->S5 or from S3->S5 or from S4->S5 depending upon the the values of Q[0]Q[-1]. The bits of A and Q gets shifted in this state except the MSB of A. 
+- S6 : Module stops if counter reaches to zero. 
+Depending upon the state and the feedback from data path, different control signals are set or reset. 
 
 ![Booths_Block_Diagram](https://user-images.githubusercontent.com/90913438/189526563-2c735189-becb-4497-92b6-2ee9173ceb7d.png)
+
 # Simulation Results 
+
 ## Command Line Output 
 ## GTKWave Output 
 ## Xilinx ISE iSim Output 
