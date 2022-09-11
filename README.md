@@ -24,8 +24,8 @@
 ### Basic Idea:
 1. In Booth's algorithm, we inspect two bits of the multiplier (Q(i) and Q(i-1)) at a time
    * If the bits are same (00 or 11), we only shift the partial product.
-   * If the bits are 01, we do an addi@on and then shift.
-   * If the bits are 10, we do a subtrac@on and then shift.
+   * If the bits are 01, we do an addition and then shift.
+   * If the bits are 10, we do a subtraction and then shift.
 2. Initially, Q(i-1) is assumed to be zero.
 ## Example:
   Let us consider an example where we multiply two binary numbers using Booth's algorithm. We will multiply 7 and 8, and we will get 56 as the answer. Let M be the multiplier register, and Q be the multiplicand register. Also, let A be the temporary register used to calculate the product. Thus, in binary, we can write,
