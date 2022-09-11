@@ -1,4 +1,4 @@
-# Booth's Multiplier (VLSI Design)
+# Booth's Multiplier using Verilog 
 
 **Introduction**
 
