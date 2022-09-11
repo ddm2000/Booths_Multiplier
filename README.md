@@ -6,6 +6,7 @@
 - [Booth's Algorithm](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#booths-algorithm)
     - [Basic Idea](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#basic-idea)
     - [Example](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#example)
+- [Tools Used]()
 - [Flow Chart](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#flow-chart)
 - [Data Path](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#data-path)
 - [Control Path](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#control-path-and-state-diagram)
@@ -88,6 +89,13 @@
                 
   Hence, the final result is {A,Q} = (0000111000)<sub>2</sub> = (56)<sub>10</sub>
 
+# Tools Used 
+- [Icarus verilog](http://iverilog.icarus.com/)
+- [GTKWave](http://gtkwave.sourceforge.net/)
+- [Xilinx ISE](https://www.xilinx.com/products/design-tools/ise-design-suite.html)
+- [Draw.io](https://www.draw.io/)
+- [Plan Ahead](https://www.xilinx.com/support/documentation-navigation/development-tools/mature-products/planahead.html)
+- [Xilinx Spartan 3E](https://datasheet.lcsc.com/lcsc/2203231830_XILINX-XC3S500E-4PQG208C_C2976019.pdf)
 # Flow Chart 
 ![Booths_Flow_Chart](https://user-images.githubusercontent.com/89533085/189528949-fa907629-96c5-4b9a-a32f-4b5c267f45b0.png)
 # Data Path 
