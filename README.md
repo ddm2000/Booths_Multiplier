@@ -1,5 +1,4 @@
-# Booth's Multiplier using Verilog 
-
+# BOOTH'S MULTIPLIER USING VERILOG
   Booth's multiplication algorithm is a multiplication algorithm that multiplies two signed binary numbers in two's complement notation. The algorithm was invented by Andrew Donald Booth in 1950 .In this project, we have designed and implemented the Booths Algorithm for Multiplication using the data path and the control path. The module desigmed is capable of performing multiplication of two 4-bit signed numbers which generates a 10-bit result.
 # INDEX
 - [Booth's Multiplier using Verilog](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#booths-multiplier-using-verilog)
@@ -19,8 +18,7 @@
 - [Implementation]()
 - [Conclusion]()
 - [References]()
-**Booth's Algorithm**
-
+# Booth's Algorithm
   Booth's multiplication algorithm is a multiplication algorithm that multiplies two signed binary numbers in two's complement notation. In the conventional shift and add operation, for n-bit multiplication, we either add 0 or the multiplicand to the 2n-bit partial product, shift the partial product to the right, and repeat this entire process n times. However, while applying Booth's algorithm, we can avoid the additions whenever consecutive 0's or 1's are detected in the multiplier. Hence, this is a huge improvement from the conventional multiplication algorithm, and it makes the process a lot faster.
   
 Basic Idea:
