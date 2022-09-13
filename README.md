@@ -101,6 +101,26 @@
 # FLOW CHART 
 ![Booths_Flow_Chart](https://user-images.githubusercontent.com/90913438/189547631-cf45fba9-1474-4494-b2f5-63d6e4a41d9f.png)
 
+Following are the steps followed in the flow chart:
+
+- Step 1: Start
+- Step 2: 
+    - Initialize register A and flip-flop Q(-1) to zero by clearing its contents.
+    - Initialize the counter with 'n'(number of bits).
+    - Initialize register M with the multiplicand.
+    - Initialize register Q with the multiplier.
+- Step 3: Check {Q(0),Q(-1)}
+    - If {Q(0),Q(-1)} = "00" or "11, then go directly to step 4.
+    - If {Q(0),Q(-1)} = "01", then add M to A, store in A, and go to step 4.
+    - If {Q(0),Q(-1)} = "10", then subtract M from A, store in A, and go to step 4.
+- Step 4:
+    - Do an arithmetic shift operation on {A,Q,Q(-1)}.
+    - Decrement counter.
+- Step 5: Check counter
+    - If counter!=0, go to step 3.
+    - If counter=0, go to step 6.
+- Step 6: Stop
+
 # DATA PATH
 
 ![Booths_Multiplier_Data_Path](https://user-images.githubusercontent.com/89533085/189529052-14875833-db44-4102-83c7-d45347c6b8c2.png)
