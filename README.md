@@ -149,7 +149,10 @@ Depending upon the state and the feedback from data path, different control sign
 
 # SIMULATION RESULTS
 
-## Command Line Output 
+We are multiplying 8 with 7 for all the results.
+
+## Command Line Output
+![image](https://user-images.githubusercontent.com/89533085/189895768-4fa4daf3-6610-416d-9812-5fb2f7994012.png)
 ## GTKWave Output 
 ## Xilinx ISE iSim Output 
 
