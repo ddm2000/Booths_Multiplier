@@ -43,13 +43,13 @@
   
   Now, the Booth's algorithm will multiply the two numbers as follows:
   
-  #### Initially:
+  ### Initially:
                
   >A = 00000, Q = 01000, Q(-1) = 0
                   
   As number of bits is 5, the multiplication will be carried out in 5 steps.
                   
-  #### Step 1:
+  ### Step 1:
              
   As Q(0) = 0, Q(-1) = 0, the bits will be shifted as follows:
                
@@ -57,19 +57,19 @@
                
   >A = 00000, Q: 00100, Q(-1) = 0
                
-  #### Step 2:
+  ### Step 2:
   
   As Q(0) = 0, Q(-1) = 0, the bits will be shifted again:
               
   >A = 00000, Q = 00010, Q(-1) = 0
                
-  #### Step 3:
+  ### Step 3:
   
   As Q(0) = 0, Q(-1) = 0, the bits will be shifted again:
                
   >A = 00000, Q = 00001, Q(-1) = 0
                   
-  #### Step 4:
+  ### Step 4:
                
   As Q(0) = 1, Q(-1) = 0, M(00111) will be subtracted from A(00000), and the result will be stored in A:
                
@@ -79,7 +79,7 @@
                
   >A = 11100, Q = 10000, Q(-1) = 1             
   
-  #### Step 5:
+  ### Step 5:
   
   As Q(0) = 0, Q(-1) = 1, M(00111) will be added to A(11100), and the result will be stored in A:
                 
