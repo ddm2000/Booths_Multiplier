@@ -20,7 +20,7 @@
 - [Implementation](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#implentation)
 - [Conclusion](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#conclusion)
 - [References](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#references)
-# Booth's Algorithm
+# BOOTH'S ALGORITHM
   Booth's multiplication algorithm is a multiplication algorithm that multiplies two signed binary numbers in two's complement notation. In the conventional shift and add operation, for n-bit multiplication, we either add 0 or the multiplicand to the 2n-bit partial product, shift the partial product to the right, and repeat this entire process n times. However, while applying Booth's algorithm, we can avoid the additions whenever consecutive 0's or 1's are detected in the multiplier. Hence, this is a huge improvement from the conventional multiplication algorithm, and it makes the process a lot faster. 
 ## Basic Idea:
 1. In Booth's algorithm, we inspect two bits of the multiplier (Q<sub>i</sub> and Q<sub>i-1</sub>) at a time
@@ -91,17 +91,17 @@
                 
   Hence, the final result is {A,Q} = (0000111000)<sub>2</sub> = (56)<sub>10</sub>
 
-# Tools Used 
+# TOOLS USED 
 - [Icarus verilog](http://iverilog.icarus.com/)
 - [GTKWave](http://gtkwave.sourceforge.net/)
 - [Xilinx ISE](https://www.xilinx.com/products/design-tools/ise-design-suite.html)
 - [Draw.io](https://www.draw.io/)
 - [Plan Ahead](https://www.xilinx.com/support/documentation-navigation/development-tools/mature-products/planahead.html)
 - [Xilinx Spartan 3E](https://datasheet.lcsc.com/lcsc/2203231830_XILINX-XC3S500E-4PQG208C_C2976019.pdf)
-# Flow Chart 
+# FLOW CHART 
 ![Booths_Flow_Chart](https://user-images.githubusercontent.com/90913438/189547631-cf45fba9-1474-4494-b2f5-63d6e4a41d9f.png)
 
-# Data Path 
+# DATA PATH
 
 ![Booths_Multiplier_Data_Path](https://user-images.githubusercontent.com/89533085/189529052-14875833-db44-4102-83c7-d45347c6b8c2.png)
   
@@ -111,7 +111,7 @@
 - As we saw previosly, the booth's algorithm checks the bits Q[0]Q[-1] and decides whether to add partial product to multiplicand and then shift (case : 01) or to sub multiplicand from partial product and then shift (case : 10) or only shift the contents (case : 00/11). In first two cases i.e. when Q[0]Q[-1] are either 01 or 10, addition or subtraction operation needs to be performed. Thus an ALU i.e. an Arithmetic Logic Unit is present which carries out the addition and subtraction operation depending upon the select input applied. The select input is the control signal to the ALU which comes from the control path and is based on the value of Q[0]Q[-1]. The result of ALU is loaded back to A. The number of shifting operations is same as that of the number of bits which are loaded in the shift registers (both registers should be loaded with equal number of bits.) Here we have loaded 4-bit signed numbers thus the shifting operation needs to be performed 5 times. There is a down counter present to serve this purpose. It has control signal 'ldcount' which loads value 101 to counter and another control signal named 'decr' to decrement it to zero.
 - While reading the output of booth's multiplier we read from the MSB of register of partial procut i.e. A to LSB of Multiplier i.e. Q[0] and leave Q[-1]. 
    
-# Control Path and State Diagram 
+# CONTROL PATH AND STATE DIAGRAM
 
  ![Booths_State_Diagram](https://user-images.githubusercontent.com/90913438/189547608-cdae9063-aa2d-4955-991c-c661bc2efb0f.png)
 The above fig depicts the control path of the Booths multiplier. 
@@ -127,14 +127,14 @@ Depending upon the state and the feedback from data path, different control sign
 
 ![Booths_Block_Diagram](https://user-images.githubusercontent.com/90913438/189526563-2c735189-becb-4497-92b6-2ee9173ceb7d.png)
 
-# Simulation Results 
+# SIMULATION RESULTS
 
 ## Command Line Output 
 ## GTKWave Output 
 ## Xilinx ISE iSim Output 
 
-# Implentation 
+# IMPLEMENTATION
 
-# Conclusion 
-# References 
+# CONCLUSION
+# REFERENCES 
 
