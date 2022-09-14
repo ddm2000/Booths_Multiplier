@@ -154,9 +154,9 @@ The above fig depicts the control path of the Booths multiplier.
 - S0 : The module starts 
 - S1 : When module is in state S1, the partial product shift register A gets loaded with all zeros. The count gets loaded to the counter and the Multiplicand M gets loaded through the data_in. 
 - S2 : In state S2, the Multiplier value gets loaded. 
-- S3 : If the Q[0]Q[-1] bits are 01 then module goes into state S3 where the value of multiplicand M and partial product A are loaded into ALU and are added with each other[A = A+M]. The result again is stored into the register A. 
-- S4 : If the Q[0]Q[-1] bits are 10 then module goes into state S4 where the value of multiplicand M and partial product A are loaded into ALU and are subtracted [A = A-M]. The result again is stored into the register A. 
-- S5 : The module changes its state from S2->S5 or from S3->S5 or from S4->S5 depending upon the the values of Q[0]Q[-1]. The bits of A and Q gets shifted in this state except the MSB of A. 
+- S3 : If the Q(0)Q(-1) bits are 01 then module goes into state S3 where the value of multiplicand M and partial product A are loaded into ALU and are added with each other(A = A+M). The result again is stored into the register A. 
+- S4 : If the Q(0)Q(-1) bits are 10 then module goes into state S4 where the value of multiplicand M and partial product A are loaded into ALU and are subtracted (A = A-M). The result again is stored into the register A. 
+- S5 : The module changes its state from S2->S5 or from S3->S5 or from S4->S5 depending upon the the values of Q(0)Q(-1). The bits of A and Q gets shifted in this state except the MSB of A. 
 - S6 : Module stops if counter reaches to zero. 
 Depending upon the state and the feedback from data path, different control signals are set or reset. 
 
@@ -165,9 +165,8 @@ Depending upon the state and the feedback from data path, different control sign
 <p align="center">
   <img src="https://user-images.githubusercontent.com/90913438/189526563-2c735189-becb-4497-92b6-2ee9173ceb7d.png" />
 </p>
-![Booths_Block_Diagram](https://user-images.githubusercontent.com/90913438/189526563-2c735189-becb-4497-92b6-2ee9173ceb7d.png)
 
-The Above figure shown depicts the block diagram of the booth's multiplier. This shows the flow of signals in between control path and data path. Control path provides input to the data path. Following are the signals in the block diagram:
+The above figure depicts the block diagram of the booth's multiplier. This shows the flow of signals in between control path and data path. Control path provides input to the data path. Following are the signals in the block diagram:
 
 Control path to data path:
 
@@ -193,12 +192,12 @@ Signals exclusive to control path:
 - done    : This bit is set when the multiplication is finished.
 # SIMULATION RESULTS 
 
-
 We are multiplying 8 with 7 for all the results.
 
 ## Command Line Output
 ![image](https://user-images.githubusercontent.com/89533085/189895768-4fa4daf3-6610-416d-9812-5fb2f7994012.png)
 ## GTKWave Output 
+![image](https://user-images.githubusercontent.com/89533085/190196482-d625e3da-0bd2-4c05-87b9-4e4905bd411f.png)
 ## Xilinx ISE iSim Output 
 
 # IMPLEMENTATION
