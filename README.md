@@ -15,7 +15,7 @@
 - [Tools Used](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#tools-used)
 - [Flow Chart](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#flow-chart)
 - [Data Path](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#data-path)
-- [Control Path and State Diadram](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#control-path-and-state-diagram)
+- [Control Path and State Diagram](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#control-path-and-state-diagram)
 - [Block Diagram](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#block-diagram)
 - [Simulation Results](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#simulation-results)
     - [CLI Output](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#command-line-output)
