@@ -1,6 +1,9 @@
 
 # BOOTH'S MULTIPLIER USING VERILOG
-![Cover Image](https://evision-systems.de/wp-content/uploads/2021/06/evision-header-eda-chip09-full.jpg)
+<p align="center">
+  <img src="https://evision-systems.de/wp-content/uploads/2021/06/evision-header-eda-chip09-full.jpg" />
+</p>
+
 [Image Coutersy](https://evision-systems.de/wp-content/uploads/2021/06/evision-header-eda-chip09-full.jpg)
 
   Booth's multiplication algorithm is a multiplication algorithm that multiplies two signed binary numbers in two's complement notation. The algorithm was invented by Andrew Donald Booth in 1950. In this project, we have designed and implemented the Booths Algorithm for Multiplication using the data path and the control path. The module desigmed is capable of performing multiplication of two 4-bit signed numbers which generates a 10-bit result.
@@ -100,7 +103,10 @@
 - [Plan Ahead](https://www.xilinx.com/support/documentation-navigation/development-tools/mature-products/planahead.html)
 - [Xilinx Spartan 3E](https://datasheet.lcsc.com/lcsc/2203231830_XILINX-XC3S500E-4PQG208C_C2976019.pdf)
 # FLOW CHART 
-![Booths_Flow_Chart](https://user-images.githubusercontent.com/90913438/189547631-cf45fba9-1474-4494-b2f5-63d6e4a41d9f.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/90913438/189547631-cf45fba9-1474-4494-b2f5-63d6e4a41d9f.png" />
+</p>
+
 
 Following are the steps followed in the flow chart:
 
@@ -124,7 +130,11 @@ Following are the steps followed in the flow chart:
 
 # DATA PATH
 
-![Booths_Multiplier_Data_Path](https://user-images.githubusercontent.com/89533085/189529052-14875833-db44-4102-83c7-d45347c6b8c2.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/89533085/189529052-14875833-db44-4102-83c7-d45347c6b8c2.png" />
+</p>
+
+
   
   The above fig shown depicts the data path of the booth's multiplier. 
 - It contains 3 Shift registers to store Multiplicand (M), Multiplier (Q) and the partial product (A). There is a common data_in line to load the values to M and Q. The values are loaded using control signals ldM and ldQ respectively. Along with ldQ, shift register Q is provided with few more control signals such as clrQ and shiftQ which are used to clear the register and shift the contents of register respectivly. The shift register A is initialized with 0. The shift register A is also provided with same control signals as that if register Q that are ldA to load value to A, clrA to clear the register and shiftA to shift the content. 
@@ -134,7 +144,10 @@ Following are the steps followed in the flow chart:
    
 # CONTROL PATH AND STATE DIAGRAM
 
- ![Booths_State_Diagram](https://user-images.githubusercontent.com/90913438/189547608-cdae9063-aa2d-4955-991c-c661bc2efb0f.png)
+ <p align="center">
+  <img src="https://user-images.githubusercontent.com/90913438/189547608-cdae9063-aa2d-4955-991c-c661bc2efb0f.png" />
+</p>
+ 
 
 The above fig depicts the control path of the Booths multiplier. 
 &nbsp&nbsp The control path is a controller which provides different control signals to the different data path modules. There are some feedback signals which originate from data path and are fed to control path. These signals are necessary for state trasition. The control path module is a Finite State Machine. There are some finite states and depending in which state currently the module is, the control signals are activated. The above diagram shows the states assigned to the block. 
@@ -148,6 +161,10 @@ The above fig depicts the control path of the Booths multiplier.
 Depending upon the state and the feedback from data path, different control signals are set or reset. 
 
 # BLOCK DIAGRAM
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/90913438/189526563-2c735189-becb-4497-92b6-2ee9173ceb7d.png" />
+</p>
 ![Booths_Block_Diagram](https://user-images.githubusercontent.com/90913438/189526563-2c735189-becb-4497-92b6-2ee9173ceb7d.png)
 
 The Above figure shown depicts the block diagram of the booth's multiplier. This shows the flow of signals in between control path and data path. Control path provides input to the data path. Following are the signals in the block diagram:
