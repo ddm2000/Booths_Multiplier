@@ -105,7 +105,9 @@
 # FLOW CHART 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/90913438/189547631-cf45fba9-1474-4494-b2f5-63d6e4a41d9f.png" />
-</p>
+ </p>
+ <p align="center"> <b> Fig. 1 : Flow Chart </b> </p>
+
 
 
 Following are the steps followed in the flow chart:
@@ -133,6 +135,7 @@ Following are the steps followed in the flow chart:
 <p align="center">
   <img src="https://user-images.githubusercontent.com/89533085/189529052-14875833-db44-4102-83c7-d45347c6b8c2.png" />
 </p>
+<p align="center"> <b> Fig. 2 : Data Path </b> </p>
 
 
   
@@ -147,6 +150,7 @@ Following are the steps followed in the flow chart:
  <p align="center">
   <img src="https://user-images.githubusercontent.com/90913438/189547608-cdae9063-aa2d-4955-991c-c661bc2efb0f.png" />
 </p>
+<p align="center"> <b> Fig. 3 : Control Path </b> </p>
  
 
 The above fig depicts the control path of the Booths multiplier. 
@@ -165,7 +169,7 @@ Depending upon the state and the feedback from data path, different control sign
 <p align="center">
   <img src="https://user-images.githubusercontent.com/90913438/189526563-2c735189-becb-4497-92b6-2ee9173ceb7d.png" />
 </p>
-
+<p align="center"> <b> Fig. 4 : Block Diagram </b> </p>
 The above figure depicts the block diagram of the booth's multiplier. This shows the flow of signals in between control path and data path. Control path provides input to the data path. Following are the signals in the block diagram:
 
 Control path to data path:
@@ -199,8 +203,10 @@ The expected answer is 111000 i.e. 56
 
 ## Command Line Output
 ![image](https://user-images.githubusercontent.com/89533085/189895768-4fa4daf3-6610-416d-9812-5fb2f7994012.png)
+<p align="center"> <b> Fig. 5 : Command Line Output </b> </p>
 ## GTKWave Output 
 ![image](https://user-images.githubusercontent.com/89533085/190196482-d625e3da-0bd2-4c05-87b9-4e4905bd411f.png)
+<p align="center"> <b> Fig. 6 : GTKWave Graphical Output </b> </p>
 ## Xilinx ISE iSim Output 
 
 # IMPLEMENTATION
