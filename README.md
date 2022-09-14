@@ -192,7 +192,10 @@ Signals exclusive to control path:
 - done    : This bit is set when the multiplication is finished.
 # SIMULATION RESULTS 
 
-We are multiplying 8 with 7 for all the results.
+Here the results are shown for the following test case.
+M = 0111 (7)
+Q = 1000 (8)
+The expected answer is 111000 i.e. 56 
 
 ## Command Line Output
 ![image](https://user-images.githubusercontent.com/89533085/189895768-4fa4daf3-6610-416d-9812-5fb2f7994012.png)
