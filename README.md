@@ -4,7 +4,7 @@
   <img src="https://evision-systems.de/wp-content/uploads/2021/06/evision-header-eda-chip09-full.jpg" />
 </p>
 
-[Image Coutersy](https://evision-systems.de/wp-content/uploads/2021/06/evision-header-eda-chip09-full.jpg)
+<p align="center"> [Image Coutersy](https://evision-systems.de/wp-content/uploads/2021/06/evision-header-eda-chip09-full.jpg) </p>
 
   Booth's multiplication algorithm is a multiplication algorithm that multiplies two signed binary numbers in two's complement notation. The algorithm was invented by Andrew Donald Booth in 1950. In this project, we have designed and implemented the Booths Algorithm for Multiplication using the data path and the control path. The module desigmed is capable of performing multiplication of two 4-bit signed numbers which generates a 10-bit result.
   
