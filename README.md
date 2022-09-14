@@ -203,9 +203,13 @@ The expected answer is 111000 i.e. 56
 
 ## Command Line Output
 ![image](https://user-images.githubusercontent.com/89533085/189895768-4fa4daf3-6610-416d-9812-5fb2f7994012.png)
+
 <p align="center"> <b> Fig. 5 : Command Line Output </b> </p>
+
 ## GTKWave Output 
+
 ![image](https://user-images.githubusercontent.com/89533085/190196482-d625e3da-0bd2-4c05-87b9-4e4905bd411f.png)
+
 <p align="center"> <b> Fig. 6 : GTKWave Graphical Output </b> </p>
 ## Xilinx ISE iSim Output 
 
