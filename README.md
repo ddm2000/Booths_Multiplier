@@ -1,6 +1,7 @@
 
 # BOOTH'S MULTIPLIER USING VERILOG
 ![Cover Image](https://evision-systems.de/wp-content/uploads/2021/06/evision-header-eda-chip09-full.jpg)
+[Image Coutersy](https://evision-systems.de/wp-content/uploads/2021/06/evision-header-eda-chip09-full.jpg)
 
   Booth's multiplication algorithm is a multiplication algorithm that multiplies two signed binary numbers in two's complement notation. The algorithm was invented by Andrew Donald Booth in 1950. In this project, we have designed and implemented the Booths Algorithm for Multiplication using the data path and the control path. The module desigmed is capable of performing multiplication of two 4-bit signed numbers which generates a 10-bit result.
   
@@ -145,9 +146,26 @@ The above fig depicts the control path of the Booths multiplier.
 - S6 : Module stops if counter reaches to zero. 
 Depending upon the state and the feedback from data path, different control signals are set or reset. 
 
+# BLOCK DIAGRAM
 ![Booths_Block_Diagram](https://user-images.githubusercontent.com/90913438/189526563-2c735189-becb-4497-92b6-2ee9173ceb7d.png)
 
-# SIMULATION RESULTS
+The Above figure shown depicts the block diagram of the booth's multiplier. This shows the flow of signals in between control path and data path. Control path provides input to the data path. Following are the signal which act as input to data path 
+- ldA     : To load the partial product register. 
+- clrA    : To clear the partial product register.
+- shiftA  : To shift the data in partial product register. 
+- ldQ     : To load the multiplier into the register. 
+- shiftQ  : To shift the data in shift register Q. 
+- ldM     : To load the multiplicand. 
+- clrff   : To clear the flip flop. 
+- addsub  : This acts as the select line of the ALU. 
+- ldCount : To load the count value into the counter.
+- decr    : To decrement the counter. 
+
+There are some signals which act as feedback to the control path. These are provided by the data path. 
+- iszero  : To check whether counter has reached to zero or not 
+- q0, qm1 : Q(0and Q(-1)
+# SIMULATION RESULTS 
+
 
 We are multiplying 8 with 7 for all the results.
 
