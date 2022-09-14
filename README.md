@@ -135,6 +135,7 @@ Following are the steps followed in the flow chart:
 # CONTROL PATH AND STATE DIAGRAM
 
  ![Booths_State_Diagram](https://user-images.githubusercontent.com/90913438/189547608-cdae9063-aa2d-4955-991c-c661bc2efb0f.png)
+
 The above fig depicts the control path of the Booths multiplier. 
 &nbsp&nbsp The control path is a controller which provides different control signals to the different data path modules. There are some feedback signals which originate from data path and are fed to control path. These signals are necessary for state trasition. The control path module is a Finite State Machine. There are some finite states and depending in which state currently the module is, the control signals are activated. The above diagram shows the states assigned to the block. 
 - S0 : The module starts 
@@ -149,7 +150,10 @@ Depending upon the state and the feedback from data path, different control sign
 # BLOCK DIAGRAM
 ![Booths_Block_Diagram](https://user-images.githubusercontent.com/90913438/189526563-2c735189-becb-4497-92b6-2ee9173ceb7d.png)
 
-The Above figure shown depicts the block diagram of the booth's multiplier. This shows the flow of signals in between control path and data path. Control path provides input to the data path. Following are the signal which act as input to data path 
+The Above figure shown depicts the block diagram of the booth's multiplier. This shows the flow of signals in between control path and data path. Control path provides input to the data path. Following are the signals in the block diagram:
+
+Control path to data path:
+
 - ldA     : To load the partial product register. 
 - clrA    : To clear the partial product register.
 - shiftA  : To shift the data in partial product register. 
@@ -161,9 +165,15 @@ The Above figure shown depicts the block diagram of the booth's multiplier. This
 - ldCount : To load the count value into the counter.
 - decr    : To decrement the counter. 
 
-There are some signals which act as feedback to the control path. These are provided by the data path. 
-- iszero  : To check whether counter has reached to zero or not 
-- q0, qm1 : Q(0and Q(-1)
+Data path to control path:
+
+- iszero  : To check whether counter has reached to zero or not.
+- q0, qm1 : Q(0) and Q(-1) are the bits which decide the ALU operations.
+
+Signals exclusive to control path:
+
+- start   : This bit is set to start the multiplication.
+- done    : This bit is set when the multiplication is finished.
 # SIMULATION RESULTS 
 
 
