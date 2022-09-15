@@ -211,6 +211,7 @@ The expected answer is 111000 i.e. 56
 ![image](https://user-images.githubusercontent.com/89533085/190196482-d625e3da-0bd2-4c05-87b9-4e4905bd411f.png)
 
 <p align="center"> <b> Fig. 6 : GTKWave Graphical Output </b> </p>
+
 ## Xilinx ISE iSim Output 
 
 # IMPLEMENTATION
