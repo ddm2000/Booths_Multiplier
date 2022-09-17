@@ -1,0 +1,714 @@
+$date
+	Sat Sep 17 17:35:40 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Booths_Multiplier_tb $end
+$var wire 1 ! shiftQ $end
+$var wire 1 " shiftA $end
+$var wire 1 # qm1 $end
+$var wire 1 $ q0 $end
+$var wire 1 % ldcount $end
+$var wire 1 & ldQ $end
+$var wire 1 ' ldM $end
+$var wire 1 ( ldA $end
+$var wire 1 ) iszero $end
+$var wire 1 * done $end
+$var wire 1 + decr $end
+$var wire 1 , clrff $end
+$var wire 1 - clrQ $end
+$var wire 1 . clrA $end
+$var wire 1 / addsub $end
+$var reg 1 0 clk $end
+$var reg 5 1 data_in [4:0] $end
+$var reg 1 2 start $end
+$scope module BOOTH_CP $end
+$var wire 1 0 clk $end
+$var wire 5 3 data_in [4:0] $end
+$var wire 1 2 start $end
+$var wire 1 # qm1 $end
+$var wire 1 $ q0 $end
+$var wire 1 ) iszero $end
+$var parameter 3 4 S0 $end
+$var parameter 3 5 S1 $end
+$var parameter 3 6 S2 $end
+$var parameter 3 7 S3 $end
+$var parameter 3 8 S4 $end
+$var parameter 3 9 S5 $end
+$var parameter 3 : S6 $end
+$var reg 1 / addsub $end
+$var reg 1 . clrA $end
+$var reg 1 - clrQ $end
+$var reg 1 , clrff $end
+$var reg 1 + decr $end
+$var reg 1 * done $end
+$var reg 1 ( ldA $end
+$var reg 1 ' ldM $end
+$var reg 1 & ldQ $end
+$var reg 1 % ldcount $end
+$var reg 1 " shiftA $end
+$var reg 1 ! shiftQ $end
+$var reg 3 ; state [2:0] $end
+$upscope $end
+$scope module BOOTH_DP $end
+$var wire 1 / addsub $end
+$var wire 1 0 clk $end
+$var wire 1 . clrA $end
+$var wire 1 - clrQ $end
+$var wire 1 , clrff $end
+$var wire 5 < data_in [4:0] $end
+$var wire 1 + decr $end
+$var wire 1 ( ldA $end
+$var wire 1 ' ldM $end
+$var wire 1 & ldQ $end
+$var wire 1 % ldcount $end
+$var wire 1 " shiftA $end
+$var wire 1 ! shiftQ $end
+$var wire 1 # qm1 $end
+$var wire 1 $ q0 $end
+$var wire 1 ) iszero $end
+$var wire 3 = count [2:0] $end
+$var wire 5 > Z [4:0] $end
+$var wire 5 ? Q [4:0] $end
+$var wire 5 @ M [4:0] $end
+$var wire 5 A A [4:0] $end
+$scope module ALU $end
+$var wire 1 / sel $end
+$var wire 5 B b [4:0] $end
+$var wire 5 C a [4:0] $end
+$var reg 5 D out [4:0] $end
+$upscope $end
+$scope module ASR $end
+$var wire 1 0 clk $end
+$var wire 1 . clr $end
+$var wire 5 E din [4:0] $end
+$var wire 1 ( ld $end
+$var wire 1 " shift $end
+$var wire 1 F sin $end
+$var reg 5 G dout [4:0] $end
+$upscope $end
+$scope module CNT $end
+$var wire 1 0 clk $end
+$var wire 1 + decC $end
+$var wire 1 % ldC $end
+$var reg 3 H cout [2:0] $end
+$upscope $end
+$scope module MPR $end
+$var wire 1 0 clk $end
+$var wire 1 ' ldP $end
+$var wire 5 I pin [4:0] $end
+$var reg 5 J pout [4:0] $end
+$upscope $end
+$scope module QM $end
+$var wire 1 0 clk $end
+$var wire 1 , clrd $end
+$var wire 1 $ d $end
+$var reg 1 # q $end
+$upscope $end
+$scope module QSR $end
+$var wire 1 0 clk $end
+$var wire 1 - clr $end
+$var wire 5 K din [4:0] $end
+$var wire 1 & ld $end
+$var wire 1 ! shift $end
+$var wire 1 L sin $end
+$var reg 5 M dout [4:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b110 :
+b101 9
+b100 8
+b11 7
+b10 6
+b1 5
+b0 4
+$end
+#0
+$dumpvars
+bx M
+xL
+b111 K
+bx J
+b111 I
+bx H
+bx G
+xF
+bx E
+bx D
+bx C
+bx B
+bx A
+bx @
+bx ?
+bx >
+bx =
+b111 <
+bx ;
+b111 3
+12
+b111 1
+00
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+#5
+0*
+0/
+0,
+0!
+0-
+0&
+0'
+0.
+0(
+0"
+0%
+0+
+b0 ;
+10
+#10
+00
+#15
+1'
+1%
+1,
+1.
+b1 ;
+10
+#20
+00
+#25
+0F
+0L
+b11001 >
+b11001 D
+b11001 E
+1&
+0'
+0%
+0.
+b0 A
+b0 C
+b0 G
+b111 @
+b111 B
+b111 J
+0#
+0)
+b101 =
+b101 H
+b10 ;
+10
+#27
+b1000 1
+b1000 3
+b1000 <
+b1000 I
+b1000 K
+#30
+00
+#35
+0$
+b1000 ?
+b1000 M
+10
+#37
+1+
+1!
+1"
+0&
+0,
+b101 ;
+#40
+00
+#45
+b100 ?
+b100 M
+b100 =
+b100 H
+10
+#50
+00
+#55
+b11 =
+b11 H
+b10 ?
+b10 M
+10
+#60
+00
+#65
+1$
+b1 ?
+b1 M
+b10 =
+b10 H
+10
+#67
+0+
+1(
+0!
+0"
+b100 ;
+#70
+00
+#75
+1F
+1L
+b10010 >
+b10010 D
+b10010 E
+1+
+1!
+1"
+0(
+1#
+b11001 A
+b11001 C
+b11001 G
+b101 ;
+10
+#80
+00
+#85
+0$
+0L
+b10101 >
+b10101 D
+b10101 E
+b10000 ?
+b10000 M
+b11100 A
+b11100 C
+b11100 G
+b1 =
+b1 H
+10
+#87
+b11 >
+b11 D
+b11 E
+0+
+1(
+1/
+0!
+0"
+b11 ;
+#90
+00
+#95
+0F
+1L
+b1010 >
+b1010 D
+b1010 E
+1+
+1!
+1"
+0(
+0#
+b11 A
+b11 C
+b11 G
+b101 ;
+10
+#100
+00
+#105
+b1000 >
+b1000 D
+b1000 E
+b11000 ?
+b11000 M
+b1 A
+b1 C
+b1 G
+1)
+b0 =
+b0 H
+10
+#107
+1*
+0+
+0!
+0"
+b110 ;
+#110
+00
+#115
+10
+#120
+00
+#125
+10
+#130
+00
+#135
+10
+#140
+00
+#145
+10
+#150
+00
+#155
+10
+#160
+00
+#165
+10
+#170
+00
+#175
+10
+#180
+00
+#185
+10
+#190
+00
+#195
+10
+#200
+00
+#205
+10
+#210
+00
+#215
+10
+#220
+00
+#225
+10
+#230
+00
+#235
+10
+#240
+00
+#245
+10
+#250
+00
+#255
+10
+#260
+00
+#265
+10
+#270
+00
+#275
+10
+#280
+00
+#285
+10
+#290
+00
+#295
+10
+#300
+00
+#305
+10
+#310
+00
+#315
+10
+#320
+00
+#325
+10
+#330
+00
+#335
+10
+#340
+00
+#345
+10
+#350
+00
+#355
+10
+#360
+00
+#365
+10
+#370
+00
+#375
+10
+#380
+00
+#385
+10
+#390
+00
+#395
+10
+#400
+00
+#405
+10
+#410
+00
+#415
+10
+#420
+00
+#425
+10
+#430
+00
+#435
+10
+#440
+00
+#445
+10
+#450
+00
+#455
+10
+#460
+00
+#465
+10
+#470
+00
+#475
+10
+#480
+00
+#485
+10
+#490
+00
+#495
+10
+#500
+00
+#505
+10
+#510
+00
+#515
+10
+#520
+00
+#525
+10
+#530
+00
+#535
+10
+#540
+00
+#545
+10
+#550
+00
+#555
+10
+#560
+00
+#565
+10
+#570
+00
+#575
+10
+#580
+00
+#585
+10
+#590
+00
+#595
+10
+#600
+00
+#605
+10
+#610
+00
+#615
+10
+#620
+00
+#625
+10
+#630
+00
+#635
+10
+#640
+00
+#645
+10
+#650
+00
+#655
+10
+#660
+00
+#665
+10
+#670
+00
+#675
+10
+#680
+00
+#685
+10
+#690
+00
+#695
+10
+#700
+00
+#705
+10
+#710
+00
+#715
+10
+#720
+00
+#725
+10
+#730
+00
+#735
+10
+#740
+00
+#745
+10
+#750
+00
+#755
+10
+#760
+00
+#765
+10
+#770
+00
+#775
+10
+#780
+00
+#785
+10
+#790
+00
+#795
+10
+#800
+00
+#805
+10
+#810
+00
+#815
+10
+#820
+00
+#825
+10
+#830
+00
+#835
+10
+#840
+00
+#845
+10
+#850
+00
+#855
+10
+#860
+00
+#865
+10
+#870
+00
+#875
+10
+#880
+00
+#885
+10
+#890
+00
+#895
+10
+#900
+00
+#905
+10
+#910
+00
+#915
+10
+#920
+00
+#925
+10
+#930
+00
+#935
+10
+#940
+00
+#945
+10
+#950
+00
+#955
+10
+#960
+00
+#965
+10
+#970
+00
+#975
+10
+#980
+00
+#985
+10
+#990
+00
+#995
+10
+#1000
+00
