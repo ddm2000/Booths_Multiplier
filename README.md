@@ -217,5 +217,10 @@ The expected answer is 111000 i.e. 56
 # IMPLEMENTATION
 
 # CONCLUSION
-# REFERENCES 
 
+In this project, we have successfully designed the Booth's Multiplier using Data path and control path design. It is found that the multiplication done using booth's algorithm is much faster than the conventional add and shift algorithm. The design is simulated using two different softwares i.e. Icarus Verilog and Xilinx ISE iSim. 
+After successfull simulation, the design is synthesized on FPGA and results are verified. 
+
+# REFERENCES 
+- [Prof. Indranil Sengupta, "Hardware Modelling Using Verilog", NPTEL](https://onlinecourses.nptel.ac.in/noc22_cs94/course)
+ 
