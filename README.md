@@ -204,18 +204,29 @@ The expected answer is 111000 i.e. 56
 ## Command Line Output
 ![Command_Line_Output](https://user-images.githubusercontent.com/90913438/190856115-465248db-2746-493a-a521-49e46effe096.png)
 
-
 <p align="center"> <b> Fig. 5 : Command Line Output </b> </p>
 
 ## GTKWave Output 
-![Graphical_Output](https://user-images.githubusercontent.com/90913438/190856129-13d498b4-2d7c-48d0-ba78-8206d9ec129b.png)
-
+![GTKWave_Graphical_Output](https://user-images.githubusercontent.com/90913438/190856129-13d498b4-2d7c-48d0-ba78-8206d9ec129b.png)
 
 <p align="center"> <b> Fig. 6 : GTKWave Graphical Output </b> </p>
 
 ## Xilinx ISE iSim Output 
+![Xilinx_Graphical_Output](https://user-images.githubusercontent.com/89533085/191744189-2143b882-f2b9-4dd5-8a9d-8fb4cd23c716.png)
+
+<p align="center"> <b> Fig. 7 : Xilinx Graphical Output </b> </p> 
 
 # IMPLEMENTATION
+
+## Xilinx ISE XCS RTL Schematic
+![Booth_RTL_Schematic](https://user-images.githubusercontent.com/89533085/191745793-5faa6c8d-4384-43c2-aab9-409ce8f7f996.png)
+
+<p align="center"> <b> Fig. 8 : Xilinx RTL Schematic </b> </p> 
+
+## Xilinx ISE Technology Schematic
+![Booth_Technology_Schematic](https://user-images.githubusercontent.com/89533085/191746039-5ba38538-3e7f-4997-a9d1-7098ee71387e.png)
+
+<p align="center"> <b> Fig. 9 : Xilinx Technology Schematic </b> </p> 
 
 # CONCLUSION
 
