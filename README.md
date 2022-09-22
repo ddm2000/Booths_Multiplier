@@ -22,6 +22,8 @@
     - [Graphical Output using GTKwave](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#gtkwave-output)
     - [Xilinx iSim Output](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#xilinx-ise-isim-output)
 - [Implementation](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#implentation)
+    - [Xilinx ISE XCS RTL Schematic](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#xilinx-ise-xcs-rtl-schematic)
+    - [Xilinx ISE XCS Technology Schematic](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#xilinx-ise-xcs-technology-schematic)
 - [Conclusion](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#conclusion)
 - [References](https://github.com/ddm2000/Booths_Multiplier/blob/main/README.md#references)
 # BOOTH'S ALGORITHM
@@ -223,7 +225,7 @@ The expected answer is 111000 i.e. 56
 
 <p align="center"> <b> Fig. 8 : Xilinx RTL Schematic </b> </p> 
 
-## Xilinx ISE Technology Schematic
+## Xilinx ISE XCS Technology Schematic
 ![Booth_Technology_Schematic](https://user-images.githubusercontent.com/89533085/191746039-5ba38538-3e7f-4997-a9d1-7098ee71387e.png)
 
 <p align="center"> <b> Fig. 9 : Xilinx Technology Schematic </b> </p> 
