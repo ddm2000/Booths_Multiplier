@@ -1,5 +1,5 @@
 
-# BOOTH'S MULTIPLIER USING VERILOG
+<h1 align="center"> BOOTH'S MULTIPLIER USING VERILOG </h1>
 <p align="center">
   <img src="https://evision-systems.de/wp-content/uploads/2021/06/evision-header-eda-chip09-full.jpg" />
 </p>
